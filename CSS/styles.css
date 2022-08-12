@@ -9,75 +9,186 @@ body {
   font-size: 14px;
   color: #757575;
   background-color: #e5e5e5;
+  letter-spacing: 0.03em;
 }
 
-.link {
-  text-decoration: none;
-  color: var(--secondary-text-color);
-}
-.link:hover {
-  color: var(--accent-color);
-}
-
-.link.logo {
-  color: var(--accent-color);
-}
-
-.link.foot-addres {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.7;
-}
-
-.link.foot-contact {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.7;
+img {
+  display: block;
 }
 
 .list {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+/* тут розташоване logo Webstudio і ссилки з навігації і адреси */
+.logo {
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.nav-link {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.nav-addres {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-addres:hover,
+.nav-addres:focus {
+  color: var(--accent-color);
+}
+
+/* cекція герой */
 .hero {
   background-color: #2f303a;
 }
 
 .hero-title {
+  color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  color: #ffffff;
+  letter-spacing: 0.06em;
 }
 
 .hero-btn {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
+
+/* секція про нас*/
 .about-title {
   color: var(--secondary-text-color);
-  font-style: normal;
   font-weight: 700;
   line-height: 1.14;
 }
 
 .about-text {
+  line-height: 1.7;
+}
+
+/* секція що ми робимо */
+
+.work-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* секція про нашу команду */
+
+.title-team {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team-member {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* сторінка портфоліо */
+/* кнопки */
+.portfolio-btn {
+  font-family: inherit;
+  color: var(--secondary-text-color);
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+/* головна секція */
+.portfolio-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.9;
+}
+/* адреса і контакти для футера тут і задній фон для нього */
+.foot-addres {
+  color: #ffffff;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
+}
+
+.foot-addres:hover,
+.foot-addres:focus {
+  color: var(--accent-color);
+}
+
+.foot-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.foot-contact:hover,
+.foot-contact:focus {
+  color: var(--accent-color);
 }
 
 .back-foot {
   background-color: #2f303a;
-}
-
-.portfolio-btn:hover {
-  color: #ffffff;
-  background-color: #2196f3;
 }
