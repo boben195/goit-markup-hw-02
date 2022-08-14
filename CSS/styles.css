@@ -2,13 +2,14 @@
   --accent-color: #2196f3;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
+  --therd-text-color: #ffffff;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #757575;
-  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+  background-color: var(--therd-text-color);
   letter-spacing: 0.03em;
 }
 
@@ -25,30 +26,35 @@ img {
 }
 /* тут розташоване logo Webstudio і ссилки з навігації і адреси */
 .logo {
-  color: var(--accent-color);
+  color: var(--secondary-text-color);
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
+.web {
+  color: var(--accent-color);
+}
 
 .nav-link {
   color: var(--secondary-text-color);
-  font-style: normal;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.studio-link:hover,
+.studio-link:focus {
+  color: var(--accent-color);
+}
+
+.folio-link:hover,
+.folio-link:focus {
   color: var(--accent-color);
 }
 
 .nav-addres {
   color: var(--primary-text-color);
-  font-style: normal;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -65,7 +71,7 @@ img {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--therd-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -74,7 +80,7 @@ img {
 }
 
 .hero-btn {
-  color: #ffffff;
+  color: var(--therd-text-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
@@ -95,7 +101,7 @@ img {
 /* секція про нас*/
 .about-title {
   color: var(--secondary-text-color);
-  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
 }
 
@@ -104,19 +110,10 @@ img {
 }
 
 /* секція що ми робимо */
-
-.work-title {
-  color: var(--secondary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
 /* секція про нашу команду */
 
-.title-team {
+.section-title {
   color: var(--secondary-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -136,6 +133,10 @@ img {
 
 /* сторінка портфоліо */
 /* кнопки */
+.folio-title {
+  display: none;
+}
+
 .portfolio-btn {
   font-family: inherit;
   color: var(--secondary-text-color);
@@ -147,15 +148,15 @@ img {
   cursor: pointer;
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-  color: #ffffff;
+.all-btn:hover,
+.all-btn:focus {
+  color: var(--therd-text-color);
   background-color: var(--accent-color);
 }
+
 /* головна секція */
 .portfolio-title {
   color: var(--secondary-text-color);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
@@ -165,16 +166,20 @@ img {
   line-height: 1.9;
 }
 /* адреса і контакти для футера тут і задній фон для нього */
+
+.logo-foot {
+  color: var(--therd-text-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
 .foot-addres {
-  color: #ffffff;
+  color: var(--therd-text-color);
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
-}
-
-.foot-addres:hover,
-.foot-addres:focus {
-  color: var(--accent-color);
 }
 
 .foot-contact {
