@@ -43,13 +43,16 @@ img {
   letter-spacing: 0.02em;
 }
 
-.studio-link:hover,
-.studio-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 
-.folio-link:hover,
-.folio-link:focus {
+.studio-link {
+  color: var(--accent-color);
+}
+
+.carent {
   color: var(--accent-color);
 }
 
@@ -147,9 +150,13 @@ img {
   text-align: center;
   cursor: pointer;
 }
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--therd-text-color);
+  background-color: var(--accent-color);
+}
 
-.all-btn:hover,
-.all-btn:focus {
+.active {
   color: var(--therd-text-color);
   background-color: var(--accent-color);
 }
